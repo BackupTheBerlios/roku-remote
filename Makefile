@@ -1,5 +1,5 @@
 .SUFFIXES :
-PROJNAME := simple-verlet
+PROJNAME := roku-remote
 DISTEXTRA := LICENCE README
 OBJDIR := obj
 BINDIR := bin
