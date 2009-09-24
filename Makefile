@@ -47,7 +47,7 @@ info :
 
 .PHONY : dist
 dist :
-	@echo "  DIST      $(PROJNAME).tar.gz"
+	@echo "  DIST      $(PROJNAME)-$(VERSION).tar.gz"
 	@mkdir -- "$(PROJNAME)-$(VERSION)"
 	@cp -Rv -- $(SRCDIR) $(INCDIR) $(DISTEXTRA) Makefile "$(PROJNAME)-$(VERSION)" > /dev/null
 	@tar -czf "$(PROJNAME)-$(VERSION).tar.gz" -- "$(PROJNAME)-$(VERSION)" > /dev/null
