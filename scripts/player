@@ -1,0 +1,9 @@
+#!/bin/sh
+
+VIDEO_PATH=/set/this/to/a/video
+
+mplayer -profile menu-profile $VIDEO_PATH -quiet \
+	| awk '
+		{ print $0 > /dev/stderr }
+		END { print "bar" }
+	' | roku -q Roku

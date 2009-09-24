@@ -1,0 +1,30 @@
+[default]
+# Write your default config options here!
+#vo=vdpau,xv,x11,
+#vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffh264vdpau,
+
+vo=xv,
+ao=alsa,
+stop-xscreensaver=yes
+fixed-vo=1
+fs=1
+monitoraspect=16:10
+# Attempt to not use the PCM volume control
+mixer-channel=Master
+
+[menu-profile]
+vo=xv,
+vc=ffmpeg12,
+ao=alsa,
+stop-xscreensaver=yes
+monitoraspect=16:10
+mixer-channel=Master
+fs=1
+menu=1
+fixed-vo=1
+menu-chroot=/media/path
+# VDPAU meeds different scaling
+#subfont-osd-scale=0.8
+subfont-osd-scale=2.5
+menu-startup=1
+cache=8192

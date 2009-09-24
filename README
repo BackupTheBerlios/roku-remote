@@ -1,0 +1,25 @@
+=> Configuration
+In irman.l find the key array (~line 188) and define whatever mappings you want.
+The header files included just above it have the available keysyms in.
+
+=> Building
+I ship a flex-ed version of irman.l, so you should only have to have flex if you
+change configuration (which is in irman.l).
+
+run make
+
+=> Running
+Run ./bin/roku for help.
+
+=> Example scripts
+in the scripts/ directory there is some example configuration files for mplayer
+to make it into a very simple media centre type thing.  The main limitation is
+that you have to always have a video in the background of the menu (you can
+pause it though).
+
+ - Copy the scripts/mplayer/ files to ~/.mplayer
+ - Set the menu-chroot path in the .mplayer/config file to your media directory
+ - Set the VIDEO_PATH variable in the player script.
+ 
+Run the player script (make sure that the roku binary is in your path, and that
+the DNS name Roku resolves to your SoundBridge).
