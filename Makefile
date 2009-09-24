@@ -1,5 +1,6 @@
 .SUFFIXES :
 PROJNAME := roku-remote
+VERSION := 0.1
 DISTEXTRA := LICENCE README
 OBJDIR := obj
 BINDIR := bin
@@ -47,10 +48,10 @@ info :
 .PHONY : dist
 dist :
 	@echo "  DIST      $(PROJNAME).tar.gz"
-	@mkdir -- "$(PROJNAME)"
-	@cp -Rv -- $(SRCDIR) $(INCDIR) $(DISTEXTRA) Makefile "$(PROJNAME)" > /dev/null
-	@tar -czf "$(PROJNAME).tar.gz" -- "$(PROJNAME)" > /dev/null
-	@rm -Rf -- "$(PROJNAME)" > /dev/null
+	@mkdir -- "$(PROJNAME)-$(VERSION)"
+	@cp -Rv -- $(SRCDIR) $(INCDIR) $(DISTEXTRA) Makefile "$(PROJNAME)-$(VERSION)" > /dev/null
+	@tar -czf "$(PROJNAME)-$(VERSION).tar.gz" -- "$(PROJNAME)-$(VERSION)" > /dev/null
+	@rm -Rf -- "$(PROJNAME)-$(VERSION)" > /dev/null
 
 $(OBJDIR) $(BINDIR) :
 	@echo "  MKDIR      $@"

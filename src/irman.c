@@ -636,7 +636,30 @@ int yy_flex_debug = 0;
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "src/irman.l"
-#line 2 "src/irman.l"
+/*
+ * Part of roku-remote
+ *
+ * Copyright (c) 2009 Thomas Spurden
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+#line 26 "src/irman.l"
 
 #include "keys.h"
 #include "command.h"
@@ -706,7 +729,7 @@ struct {
 	readNet.bytesRead = 0; \
 }
 
-#line 710 "src/irman.c"
+#line 733 "src/irman.c"
 
 #define INITIAL 0
 
@@ -888,10 +911,10 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 75 "src/irman.l"
+#line 99 "src/irman.l"
 
 
-#line 895 "src/irman.c"
+#line 918 "src/irman.c"
 
 	if ( !(yy_init) )
 		{
@@ -976,390 +999,390 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 77 "src/irman.l"
+#line 101 "src/irman.l"
 { return CK_SELECT; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 78 "src/irman.l"
+#line 102 "src/irman.l"
 { return CK_NORTH; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 79 "src/irman.l"
+#line 103 "src/irman.l"
 { return CK_SOUTH; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 80 "src/irman.l"
+#line 104 "src/irman.l"
 { return CK_WEST; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 81 "src/irman.l"
+#line 105 "src/irman.l"
 { return CK_EAST; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 82 "src/irman.l"
+#line 106 "src/irman.l"
 { return CK_PLAY; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 83 "src/irman.l"
+#line 107 "src/irman.l"
 { return CK_PAUSE; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 84 "src/irman.l"
+#line 108 "src/irman.l"
 { return CK_STOP; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 85 "src/irman.l"
+#line 109 "src/irman.l"
 { return CK_NEXT; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 86 "src/irman.l"
+#line 110 "src/irman.l"
 { return CK_PREVIOUS; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 87 "src/irman.l"
+#line 111 "src/irman.l"
 { return CK_MENU; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 88 "src/irman.l"
+#line 112 "src/irman.l"
 { return CK_EXIT; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 89 "src/irman.l"
+#line 113 "src/irman.l"
 { return CK_POWER; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 90 "src/irman.l"
+#line 114 "src/irman.l"
 { return CK_POWER_ON; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 91 "src/irman.l"
+#line 115 "src/irman.l"
 { return CK_POWER_OFF; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 92 "src/irman.l"
+#line 116 "src/irman.l"
 { return CK_SEARCH; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 93 "src/irman.l"
+#line 117 "src/irman.l"
 { return CK_ADD; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 94 "src/irman.l"
+#line 118 "src/irman.l"
 { return CK_SHUFFLE; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 95 "src/irman.l"
+#line 119 "src/irman.l"
 { return CK_REPEAT; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 96 "src/irman.l"
+#line 120 "src/irman.l"
 { return CK_VOLUME_UP; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 97 "src/irman.l"
+#line 121 "src/irman.l"
 { return CK_VOLUME_DOWN; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 98 "src/irman.l"
+#line 122 "src/irman.l"
 { return CK_BRIGHTNESS; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 99 "src/irman.l"
+#line 123 "src/irman.l"
 { return CK_ROTARY_CLOCKWISE; }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 100 "src/irman.l"
+#line 124 "src/irman.l"
 { return CK_ROTARY_COUNTERCLOCKWISE; }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 101 "src/irman.l"
+#line 125 "src/irman.l"
 { return CK_ROTARY_SWITCH; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 102 "src/irman.l"
+#line 126 "src/irman.l"
 { return CK_PRESET1; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 103 "src/irman.l"
+#line 127 "src/irman.l"
 { return CK_PRESET2; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 104 "src/irman.l"
+#line 128 "src/irman.l"
 { return CK_PRESET3; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 105 "src/irman.l"
+#line 129 "src/irman.l"
 { return CK_PRESET4; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 106 "src/irman.l"
+#line 130 "src/irman.l"
 { return CK_PRESET5; }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 107 "src/irman.l"
+#line 131 "src/irman.l"
 { return CK_PRESET6; }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 108 "src/irman.l"
+#line 132 "src/irman.l"
 { return CK_SNOOZE; }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 109 "src/irman.l"
+#line 133 "src/irman.l"
 { return CK_SOURCE; }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 110 "src/irman.l"
+#line 134 "src/irman.l"
 { return CK_SCAN_UP; }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 111 "src/irman.l"
+#line 135 "src/irman.l"
 { return CK_SCAN_DOWN; }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 112 "src/irman.l"
+#line 136 "src/irman.l"
 { return CK_GROUP; }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 113 "src/irman.l"
+#line 137 "src/irman.l"
 { return CK_ALARM; }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 114 "src/irman.l"
+#line 138 "src/irman.l"
 { return CK_PLAYLISTS; }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 115 "src/irman.l"
+#line 139 "src/irman.l"
 { return CK_BROWSE_ARTISTS; }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 116 "src/irman.l"
+#line 140 "src/irman.l"
 { return CK_BROWSE_ALBUMS; }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 117 "src/irman.l"
+#line 141 "src/irman.l"
 { return CK_BROWSE_SONGS; }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 118 "src/irman.l"
+#line 142 "src/irman.l"
 { return CK_BROWSE_GENRES; }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 119 "src/irman.l"
+#line 143 "src/irman.l"
 { return CK_BROWSE_COMPOSERS; }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 120 "src/irman.l"
+#line 144 "src/irman.l"
 { return CK_PRESET_A1; }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 121 "src/irman.l"
+#line 145 "src/irman.l"
 { return CK_PRESET_A2; }
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 122 "src/irman.l"
+#line 146 "src/irman.l"
 { return CK_PRESET_A3; }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 123 "src/irman.l"
+#line 147 "src/irman.l"
 { return CK_PRESET_A4; }
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 124 "src/irman.l"
+#line 148 "src/irman.l"
 { return CK_PRESET_A5; }
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 125 "src/irman.l"
+#line 149 "src/irman.l"
 { return CK_PRESET_A6; }
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 126 "src/irman.l"
+#line 150 "src/irman.l"
 { return CK_PRESET_B1; }
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 127 "src/irman.l"
+#line 151 "src/irman.l"
 { return CK_PRESET_B2; }
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 128 "src/irman.l"
+#line 152 "src/irman.l"
 { return CK_PRESET_B3; }
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 129 "src/irman.l"
+#line 153 "src/irman.l"
 { return CK_PRESET_B4; }
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 130 "src/irman.l"
+#line 154 "src/irman.l"
 { return CK_PRESET_B5; }
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 131 "src/irman.l"
+#line 155 "src/irman.l"
 { return CK_PRESET_B6; }
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 132 "src/irman.l"
+#line 156 "src/irman.l"
 { return CK_PRESET_C1; }
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 133 "src/irman.l"
+#line 157 "src/irman.l"
 { return CK_PRESET_C2; }
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 134 "src/irman.l"
+#line 158 "src/irman.l"
 { return CK_PRESET_C3; }
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 135 "src/irman.l"
+#line 159 "src/irman.l"
 { return CK_PRESET_C4; }
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 136 "src/irman.l"
+#line 160 "src/irman.l"
 { return CK_PRESET_C5; }
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 137 "src/irman.l"
+#line 161 "src/irman.l"
 { return CK_PRESET_C6; }
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
-#line 138 "src/irman.l"
+#line 162 "src/irman.l"
 { return CK_INTERNET_RADIO; }
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
-#line 139 "src/irman.l"
+#line 163 "src/irman.l"
 { return CK_FM_RADIO; }
 	YY_BREAK
 case 64:
 YY_RULE_SETUP
-#line 140 "src/irman.l"
+#line 164 "src/irman.l"
 { return CK_AM_RADIO; }
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
-#line 141 "src/irman.l"
+#line 165 "src/irman.l"
 { return CK_LAST_MUSIC_SERVER; }
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
-#line 142 "src/irman.l"
+#line 166 "src/irman.l"
 { return CK_VOLUME_50; }
 	YY_BREAK
 case 67:
 YY_RULE_SETUP
-#line 143 "src/irman.l"
+#line 167 "src/irman.l"
 { return CK_BROWSE; }
 	YY_BREAK
 case 68:
 YY_RULE_SETUP
-#line 144 "src/irman.l"
+#line 168 "src/irman.l"
 { return CK_PURPLE; }
 	YY_BREAK
 case 69:
 YY_RULE_SETUP
-#line 145 "src/irman.l"
+#line 169 "src/irman.l"
 { return CK_PRESET1_IR; }
 	YY_BREAK
 case 70:
 YY_RULE_SETUP
-#line 146 "src/irman.l"
+#line 170 "src/irman.l"
 { return CK_PRESET2_IR; }
 	YY_BREAK
 case 71:
 YY_RULE_SETUP
-#line 147 "src/irman.l"
+#line 171 "src/irman.l"
 { return CK_PRESET3_IR; }
 	YY_BREAK
 case 72:
 YY_RULE_SETUP
-#line 148 "src/irman.l"
+#line 172 "src/irman.l"
 { return CK_PRESET4_IR; }
 	YY_BREAK
 case 73:
 YY_RULE_SETUP
-#line 149 "src/irman.l"
+#line 173 "src/irman.l"
 { return CK_PRESET5_IR; }
 	YY_BREAK
 case 74:
 YY_RULE_SETUP
-#line 150 "src/irman.l"
+#line 174 "src/irman.l"
 { return CK_PRESET6_IR; }
 	YY_BREAK
 case 75:
 /* rule 75 can match eol */
 YY_RULE_SETUP
-#line 152 "src/irman.l"
+#line 176 "src/irman.l"
 { if(echoSoundbridge) printf("%s", yytext); }
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
-#line 154 "src/irman.l"
+#line 178 "src/irman.l"
 return TOK_END;
 	YY_BREAK
 case 76:
 YY_RULE_SETUP
-#line 156 "src/irman.l"
+#line 180 "src/irman.l"
 ECHO;
 	YY_BREAK
-#line 1363 "src/irman.c"
+#line 1386 "src/irman.c"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -2365,7 +2388,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 156 "src/irman.l"
+#line 180 "src/irman.l"
 
 
 
